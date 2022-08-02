@@ -1,9 +1,10 @@
 # 快速生成组件目录
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Github Actions][github-actions-src]][github-actions-href]
-[![Codecov][codecov-src]][codecov-href]
+![](https://img.shields.io/bundlephobia/minzip/@liuqh/easy-create-component)
+![](https://img.shields.io/github/package-json/v/liuqh0609/easy-create-component)
+![](https://img.shields.io/github/issues/liuqh0609/easy-create-component)
+![](https://img.shields.io/github/license/liuqh0609/easy-create-component)
+
 
 **一个团队内统一的风格比正确的更重要**
 该 cli 是为了在项目中快速生成统一标准的项目文件目录。
