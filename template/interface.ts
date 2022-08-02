@@ -2,9 +2,9 @@ export interface IProps {
   /**
    * 数据源
    */
-  dataSource: any
+  dataSource?: any;
   /**
    * change事件
    */
-  onChange?: (val: any) => void
+  onChange?: (val: any) => void;
 }

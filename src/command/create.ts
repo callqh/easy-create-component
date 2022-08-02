@@ -11,7 +11,6 @@ const root = resolve(cwd(), './src/components')
 const pagesPath = resolve(cwd(), './src/pages')
 const templatePath = resolve(__dirname, '../template')
 
-consola.error(templatePath)
 const reg = /^([A-Z][a-z]+)$/
 function create(name: string) {
   isExistFolder()
@@ -44,20 +43,15 @@ function createFolder(folderName: string, _path: string) {
     fs.copySync(templatePath, _path)
     fs.writeFileSync(
       resolve(_path, 'index.tsx'),
-      `import React from 'react'
+      `import React from 'react';
 
-import type { IProps } from './interface'
+import type { IProps } from './interface';
 
 const ${folderName}: React.FC<IProps> = (props) => {
-  return (
-    <div>
+  return <div className="${folderName}-wrapper"></div>;
+};
 
-    </div>
-  )
-}
-
-export default ${folderName}
-    `,
+export default  ${folderName};`,
     )
   }
   catch (e) {
@@ -79,12 +73,10 @@ function createPages(name: string, _path: string) {
     fs.createFileSync(routePages)
     fs.writeFileSync(
       routePages,
-      `import ${name} from '@components/${name}'
+      `import ${name} from '@components/${name}';
 
 export default () => {
-  return (
-    <${name} />
-  )
+  return <${name} />;
 };`,
       'utf8',
     )

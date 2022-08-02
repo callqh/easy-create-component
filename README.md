@@ -1,5 +1,10 @@
 # 快速生成组件目录
 
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Github Actions][github-actions-src]][github-actions-href]
+[![Codecov][codecov-src]][codecov-href]
+
 **一个团队内统一的风格比正确的更重要**
 该 cli 是为了在项目中快速生成统一标准的项目文件目录。
 
@@ -20,7 +25,7 @@
 
 - `pnpm`
 
-`pnpm add -D @liuqh/easy-create-component`
+  `pnpm add -D @liuqh/easy-create-component`
 
 ## 使用
 
