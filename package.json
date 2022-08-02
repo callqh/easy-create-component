@@ -1,6 +1,6 @@
 {
   "name": "@liuqh/easy-create-component",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "packageManager": "pnpm@7.4.0",
   "description": "快速生成框架",
   "author": "Liuqh",
