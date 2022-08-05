@@ -11,14 +11,8 @@ const root = resolve(cwd(), './src/components')
 const pagesPath = resolve(cwd(), './src/pages')
 const templatePath = resolve(__dirname, '../template')
 
-const reg = /^([A-Z][a-z]+)$/
 function create(name: string) {
   isExistFolder()
-
-  if (!reg.test(name)) {
-    consola.error('组件名称需要首字母大写的大驼峰格式')
-    return exit(1)
-  }
 
   const floderPath = resolve(root, name)
   const page = resolve(pagesPath, name)
